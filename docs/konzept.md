@@ -2,7 +2,7 @@
 
 SDR-Empfänger für Kurzwelle als Workshop für Prüfungskandidaten im Amateurfunk. Gemeinsam bauen, mit Software aus bestehenden offenen Projekten. Eigene Platine, 3D-gedrucktes Gehäuse. Open Source.
 
-Grundsatz: Bestehende offene Software forken und anpassen, nicht von Grund auf neu entwickeln. Die Hardware (Platine, Gehäuse) ist ein eigenes Design. Als Mikrocontroller dient ein ESP32-S3 (Wemos S3 Mini oder ähnlich) aus dem Vorrat von Marcel.
+Grundsatz: Bestehende offene Software forken und anpassen, nicht von Grund auf neu entwickeln. Die Hardware (Platine, Gehäuse) ist ein eigenes Design. Als Mikrocontroller dient ein ESP32-S3-DevKitC-1 (N16R8) aus dem Vorrat von Marcel, wie beim Funkfüürli.
 
 ## 1. Funktion
 Blockschaltbild: Antenne, Bandfilter, Tayloe-Mischer (Quadratur), Si5351 als Oszillator, I2S-Audio-Codec, ESP32-S3 (FFT, Demodulation SSB/AM/CW), Display und Encoder, Audioausgang, optional Handy per Wi-Fi.
