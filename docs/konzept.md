@@ -71,7 +71,7 @@ Abnahmekriterium: **Falltest aus 1 m auf Holz oder Fliesen.** Mehrere Stürze (f
 Prinzipien:
 1. **Last nie über die Platine.** Wenn jemand auf das Gerät sitzt oder steht, darf nichts auf Modul, Display oder Platine drücken. Keine starren Rippen oder Stege vom Deckel auf Modul oder Platine. Die tragende Struktur sind Gehäusewände und Stützsäulen neben der Platine.
 2. **Weich halten statt hart klemmen.** Modul, Display und Akku werden mit flexiblem Kunststoff (TPU-Pads aus dem 3D-Drucker) oder Schaumstoff (Moosgummi, PU-Schaum) gepolstert und nur leicht angedrückt. Kein Dauerdruck auf Steckverbindungen.
-3. **Modul:** Aufnahme mit Seitenführung im Gehäuse, von oben ein weiches Pad. Buchsenleisten mit gedrehten Präzisionskontakten statt billiger Streifen. Für eine Endversion alternativ die Stiftleiste direkt einlöten.
+3. **Modul:** Aufnahme mit Seitenführung im Gehäuse, von oben ein weiches Pad. Buchsenleisten mit gedrehten Präzisionskontakten statt einfacher Steckerstreifen. Für eine Endversion alternativ die Stiftleiste direkt einlöten.
 4. **Platine:** 4 M3-Schrauben auf Abstandsbolzen, bei Bedarf mit Gummitüllen als Dämpfung.
 5. **Gehäuse:** PETG, Wandstärke ca. 2.4 mm, abgerundete Ecken, Rippen nur an den Wänden, Stossecken (Bumper) aus TPU.
 6. **Akku (schwerstes Teil):** im Halter verschraubt, im Fach seitlich geführt und gepolstert, mit Schraubdeckel. Geschützte Zelle. Das Gehäuse schützt die Zelle vor Quetschung.
@@ -95,7 +95,7 @@ Prinzipien:
 3. Bluetooth-Audio: externes Sendemodul oder klassischer ESP32 mit A2DP?
 4. Modultyp des ESP32-S3 festlegen (Pinbelegung, Flash/PSRAM).
 5. Bestückung: Werk oder Handarbeit.
-6. Kursgrösse, Dauer, Materialkosten pro Teilnehmer.
+6. Kursgrösse und Dauer.
 7. Welcher Drucker und welcher Bauraum im Club und im FabLab?
 8. Namensprüfung (Swissreg/IGE und GitHub) vor der Veröffentlichung.
 9. Reihenfolge: Funkfüürli zuerst (einfacher), Wellenjäger als zweiter Kurs.
