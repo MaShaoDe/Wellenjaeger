@@ -1,5 +1,7 @@
 # Wellenjäger: DIY Shortwave SDR Receiver
 
+![Wellenjäger: build an SDR receiver](docs/img/wellenjaeger-teaser.jpg)
+
 [Deutsch](README.md) | [English](README.en.md)
 
 *Build your own software defined receiver, watch the bands as a waterfall and hunt the signals yourself.*

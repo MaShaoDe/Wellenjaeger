@@ -1,5 +1,7 @@
 # Wellenjäger: DIY-Kurzwellen-SDR-Empfänger
 
+![Wellenjäger: SDR-Empfänger bauen](docs/img/wellenjaeger-teaser.jpg)
+
 [Deutsch](README.md) | [English](README.en.md)
 
 *Einen eigenen Software Defined Receiver bauen, die Bänder als Wasserfall sehen und die Signale selbst jagen.*
