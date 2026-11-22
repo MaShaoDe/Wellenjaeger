@@ -1,4 +1,4 @@
-# Wellenjäger: Konzept (Stand 2026-11-12, Entwurf)
+# Wellenjäger: Konzept (Stand 2026-11-22, Entwurf)
 
 SDR-Empfänger für Kurzwelle als Workshop für Prüfungskandidaten im Amateurfunk. Gemeinsam bauen, mit Software aus bestehenden offenen Projekten. Eigene Platine, 3D-gedrucktes Gehäuse. Open Source.
 
@@ -34,6 +34,19 @@ ESP32-S3: genug Leistung für 1024-Punkte-FFT bei 48 kHz Bandbreite plus Demodul
 Die ESP32-S3 und C3 haben nur BLE und kein Bluetooth Classic (A2DP), im Datenblatt von Espressif prüfen. Soll der Ton direkt per Bluetooth zum Lautsprecher, gibt es zwei Wege:
 * kleines externes Bluetooth-Sendemodul auf der Platine (funktioniert mit dem S3), oder
 * klassischer ESP32 (z.B. ESP32-A1S) mit A2DP in der Firmware, wie im Referenzprojekt ESP32-A1S-Tayloe.
+
+## 3a. Variante B: ESP32-P4 mit RTL-SDR (Vorschlag, Favorit von Marcel, Entscheidung offen)
+Als Alternative zum Tayloe-Aufbau mit ESP32-S3. Vorbild ist das Projekt «ESP32-P4 SDR Radio» von J.G. Holstein (Video vom 2026-10-22, Firmware V3.30.4). Angaben aus der Videobeschreibung, nicht selbst geprüft.
+
+* Prozessor: ESP32-P4, dual core, 400 MHz (Waveshare-Board).
+* Empfangsteil: RTL-SDR Blog V4 per USB statt Tayloe-Mischer und Si5351. Eignung für Kurzwelle und Störverhalten: offen.
+* Anzeige: 5"-Touchscreen mit 1280 x 720, Oberfläche mit LVGL 9, FFT-Spektrum und Wasserfall direkt auf dem Gerät.
+* Audio: Codec ES8311.
+* Demodulation: USB/LSB, AM, NFM/WFM, CW. Dazu PBT, AGC, Noise Blanker, Notch-Filter.
+* WLAN: laut Video vorhanden. Wie es auf dem Board realisiert ist und wie stark es stört: offen.
+* Quellcode, Repo und Lizenz: nicht bekannt, offen. Ohne Lizenz nur Anschauung, vor einer Nutzung beim Autor anfragen.
+
+Vorteil (Vorschlag): grosses Cockpit-Display mit Wasserfall ohne PC. Nachteil: RF-Bastelteil (Tayloe, Filter, Abgleich) entfällt und damit ein Teil des Workshop-Lernziels. Entscheidung zwischen Variante A (ESP32-S3, Tayloe) und Variante B steht aus.
 
 ## 4. Audio
 Gleiches Konzept wie beim Funkfüürli:
@@ -102,6 +115,8 @@ Prinzipien:
 10. Kleber für Bauteile festlegen (Heissleim, neutral vernetzendes Silikon, Epoxid).
 11. Watchdog und Neustart in der Firmware: Was bringt der ATS-Mini-Fork schon mit?
 12. Falltest aus 1 m: Protokollvorlage und Testplan schreiben.
+13. Variante A (ESP32-S3, Tayloe) oder Variante B (ESP32-P4, RTL-SDR)? Repo und Lizenz von J.G. Holstein klären (Abschnitt 3a).
 
 ## Quellen
 * GitHub: michalin/easysdr (GPL-3.0), jgauchia/ESP32-SDR und thaaraak/ESP32-A1S-Tayloe (beide ohne Lizenzdatei)
+* YouTube: «ESP32-P4 SDR Radio», J.G. Holstein, 2026-10-22 (Kanal yo4hek), nur Videobeschreibung gelesen
